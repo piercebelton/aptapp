@@ -51,7 +51,7 @@ class ApartmentsController < ApplicationController
   # POST /apartments
   # POST /apartments.json
   def create
-    @apartment = Apartment.new(apartment_params)
+    @apartment = current_user.apartments.build(apartment_params)
 
     respond_to do |format|
       if @apartment.save
