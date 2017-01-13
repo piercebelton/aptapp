@@ -36,11 +36,27 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# helps integrate jquery and js into your rails app
 gem 'underscore-rails'
+
+# allows app to grab coordinates from gmaps based on address info
 gem 'geocoder'
+
+# google maps for rails, requires API key etc.
 gem 'gmaps4rails'
+
+# for submitting attachments via forms in your rails apps
 gem 'paperclip'
+
+# search gem for databases
 gem 'textacular'
+
+# for authorization
+gem 'cancancan'
+
+# allows roles to be created for classes
+gem 'rolify'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
